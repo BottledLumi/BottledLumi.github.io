@@ -1,0 +1,443 @@
+@font-face{
+    font-family: 'Aller';
+    src: url(../font/Aller_Rg.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.scroll {
+    opacity: 0;
+}
+   
+.scroll.scrolled {
+    animation: fade-in 1.5s ease-in-out both;
+}
+  
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+
+    background-color: #a8b0d3;
+    color: rgb(60,60,80);
+    font-family: 'Aller', 'Georgia', 'Times New Roman', 'Times';
+    font-size: 20px;
+
+    animation: fade-in 0.3s;
+}
+
+.container{
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+header{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+}
+
+content{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.navigation{
+    margin: 0;
+    background-color: white;
+}
+
+.responsive-nav{
+    display: none;
+}
+
+.responsive-nav .nav-menu{
+    position: fixed;
+    
+    top: 8px;
+    right: 16px;
+    border-radius: 50%;
+    width: 65px; 
+    height: 65px;
+    display: inline-block;
+    
+    text-align: center;
+    background-color: #eff1f8;
+}
+
+.responsive-nav .nav-menu img{
+    margin-top: 7.5px;
+}
+
+.responsive-nav .responsive-nav-options{
+    display: none;
+    position: fixed;
+    border-radius: 5px;
+    padding: 0px;
+    top: 80px;
+    right: 16px;
+}
+
+.responsive-nav .responsive-nav-options li{
+    width: 150px;
+}
+
+.navigation-left{
+    float: left;
+}
+
+.navigation-right{
+    float: right;
+
+    text-align: end;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    height: 100%;
+    float: left;
+}
+
+li a {
+    height: 100%;
+    display: block;
+
+    padding: 10px;
+
+    color: rgb(60,60,80);
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e1e5f3;
+    color: rgb(60,60,80);
+}
+
+/* index */
+body .index{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.index.content{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    margin: 3%;
+
+    
+}
+
+.index .left{
+    height: 100%;
+    grid-area: 1 1;
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-columns: auto;
+    margin-right: 6%;
+}
+
+.index .title{
+    margin: 3px;
+    margin-bottom: 6%;
+    padding-left: 15px;
+
+    font-size: 6vh;
+}
+
+.index .sidebar{
+    margin: 3px;
+    font-size: 24px;
+}
+
+.index .sidebar p{
+    padding: 6px;
+}
+
+.index .responsive{
+    display: none;
+}
+
+.index .info p{
+    line-height: 1.2em;
+}
+
+.index .definition{
+    display: block;
+}
+
+#colour-wheel-1
+{
+    margin: 20px;
+    text-align: center;
+}
+
+.index .history{
+    display: none;
+}
+
+#ryb-1{
+    margin: 15px;
+    text-align: center;
+}
+
+.index .importance{
+    display: none;
+}
+
+.index .importance ul li{
+    float: none;
+}
+
+#colour-symbolism{
+    margin: 15px;
+}
+
+.index .representation{
+    display: none;
+}
+
+.index .representation ul li{
+    float: none;
+}
+
+#rgb, #cmyk{
+    margin: 20px;
+}
+
+/*basics*/
+
+body.basics{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.basics .container{
+    height: 450px;
+    margin: 5px;
+
+    margin-bottom: 50px;
+}
+
+.basics.content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 80%;
+
+    margin: 3%;
+    text-align: center;
+}
+
+.basics .title{
+    grid-row: 1;
+
+    font-size: 78px;
+}
+
+.basics .info{
+    grid-row: 2;
+
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+}
+
+.basics.content .left{
+    grid-column: 1;
+}
+
+.basics.content .middle{
+    grid-column: 2;
+}
+
+.basics.content .right{
+    grid-column: 3;
+}
+
+.basics.content p{
+    margin: 15px;
+    text-align: start;
+}
+
+.basics .tst img
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.basics .mct img
+{
+    margin-top: 20px;
+}
+
+/*psychology*/
+body.psychology{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.psychology.content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    margin: 3%;
+}
+
+.psychology >p{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+}
+
+.psychology .picker{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+}
+
+.psychology .picker-left{
+    grid-column: 1;
+    padding-top: 2vw;
+    padding-left: 8vw;
+    padding-right: 1vw;
+}
+
+#red, #pink, #purple, #green, #yellow, #black, #grey, #white{
+    display: none;
+}
+
+#blue{
+    display: block
+}
+
+.psychology .picker-right{
+    grid-column: 2;
+    
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.psychology #ball{
+    margin: 30px;
+    border-radius: 50%;
+    width: 25vw; 
+    height: 25vw;
+    display: inline-block;
+    
+    background-color: #a8b0d3;
+}
+
+.psychology input[type="color"]{
+    height: 50px;
+    width: 300px;
+}
+  
+/*global*/
+.hover:hover{
+    background-color: #e1e5f3;
+    color: rgb(60,60,80);
+}
+
+.selected{
+    background-color: rgb(60,60,80);
+    color: white;
+}
+
+#home {
+    background-color: rgb(60,60,80);
+    color: white;
+}
+
+#basics {
+    background-color: rgb(60,60,80);
+    color: white;
+}
+
+#psychology {
+    background-color: rgb(60,60,80);
+    color: white;
+}
+
+@media screen and (max-width: 720px)
+{
+    /*navigation*/
+    .navigation{
+        display: none;
+    }
+
+    .responsive-nav{
+        display: block;
+    }
+    /*index*/
+
+    .index.content{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+    .index .title{
+        display: none;
+    }
+    .index .left{
+        display: none;
+    }
+    .index .responsive{
+        margin-right: 25%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .index .responsive p{
+        margin: 3px;
+    }
+    /*basics*/  
+
+    /*psychology*/
+    .psychology .picker{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+    
+    .psychology .picker-left{
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0;
+    }
+    .psychology .picker-right{
+        grid-column: 1;
+        grid-row: 2;
+        padding: 0;
+    }
+
+    .psychology #ball{
+        margin: 30px;
+        border-radius: 50%;
+        width: 375px; 
+        height: 375px;
+        display: inline-block;
+        
+        background-color: #a8b0d3;
+    }
+}
+
+@media screen and (max-width: 540px)
+{
+
+}
