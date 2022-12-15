@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Sze Ting's Website</title>
+    <link rel ="stylesheet" type = "text/css" href = "css/style.css">
+    <style>
+        body{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            background-image:radial-gradient(rgb(109, 101, 87),rgb(23, 22, 22));
+        }
+        
+        .content{
+            display: grid;
+            grid-template-columns: 2% 60% 36% 2%;
+            background-image:radial-gradient(rgb(173, 225, 242),rgb(81, 55, 124));
+        }
+    
+        #me {
+            margin-top: 2%;
+            margin-right: 13%;
+            margin-bottom: 5%;
+            grid-row: 1 / span 3;
+            grid-column: 3;
+            height: 90%;
+            width: auto;
+            float: right;
+            z-index: 1;
+        }
+    
+        #bob {
+            grid-column: 2;
+            grid-row: 2;
+            z-index: 1;
+            width: 37%;
+            margin-top: -5%;
+            margin-left: 35%;
+        }
+    
+        .speechBubble{
+            display: grid;
+            position: relative;
+            grid-column: 2;
+            grid-row: 1;
+            text-align: right;
+            padding-left: 22%;
+        }
+    
+        .speechBubble img{
+            position: relative;
+            display: grid;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: auto;
+            grid-column: 1;
+            grid-row: 1;
+            height: auto;
+            width: 100%;
+        }
+    
+        .speechBubble .text{
+            position: absolute;
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+            width: 80%;
+            top: 45%;
+            transform: translate(7%,-50%);
+        }
+    
+        .rightArrow{
+            z-index: 2;
+            grid-column: 4;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+    
+        /* gradient on floor + put to background */
+        #floor{
+            grid-column: 1/span 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            z-index: 0;
+            background-image:radial-gradient(rgb(109, 101, 87),rgb(23, 22, 22));
+            height: 100%;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- navigation bar -->
+    <div class="container">
+            <a href="index.html">Sze Ting's Website <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
+            <div class="container-right">
+                <a href="introduction.html">Introduction</a>
+                <a href="education.html">Education</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+    </header>
+    <div class = "content">
+    <img src = "images/me.png" alt = "Me" id = me>
+        <div class = "speechBubble">
+            <img src = "images/pixelSpeechBubble.png" alt = speechBubble>
+            <div class = "text">
+                <p>Hello! My name is Tan Sze Ting and this is my personal website.
+                <br>This website contains some basic information on me and my history to get to know me better.</p>
+            </div>
+        </div>
+    <img src = "Images/bobClear.gif" alt = "Bob drawing" id = bob>
+        <div id = floor>
+        </div>
+        <div class = "rightArrow" onclick="location.href='introduction.html'"> <!--click to go next page-->
+        </div>
+    </div>
+    <div class = "footer">
+    <!-- socials in footer -->
+        <div class = "instagram">
+        <img src = "images/instagramLogo.png" alt = instagramLogo width = 7% height = auto>
+        Instagram: @a.single.bottle
+        </div>    
+        <div class = "discord">
+        <img src = "images/discordLogo.png" alt = discordLogo width = 7% height = auto>
+        Discord: Lumi#6130
+        </div>
+    </div>
+</body>
+</html>

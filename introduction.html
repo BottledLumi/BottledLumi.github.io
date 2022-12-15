@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Sze Ting's Website - Introduction</title>
+    <link rel ="stylesheet" type = "text/css" href = "CSS/style.css">
+    <style>
+        body{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+        }
+    
+        .content{
+            display: grid;
+            grid-template-columns: 2% 96% 2%;
+            grid-template-rows: auto auto;
+            grid-column: 1;
+            grid-row: 2;
+            background-color: rgba(28, 20, 56, 0.2);
+        }
+    
+        .introduction{
+            justify-content: center;
+            margin: 2%;
+            grid-column: 2;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 55% 41%;
+            grid-template-rows: auto auto;
+        }
+        
+        .attribute{
+            grid-column: 1;
+            grid-row: 1;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 60% 40%;
+        }
+    
+        .attribute li{
+            margin-bottom: 3%;
+        }
+    
+        .me{
+            text-align: center;
+            justify-content: center;
+            grid-column: 2;
+            grid-row: 1;
+        }
+    
+        .traits{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .skills{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    
+        .likes{
+            grid-column: 1;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 19% 27% 27% 27%;
+            grid-template-rows: auto;
+        }
+    
+        .cheese{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    
+        .cheese img{
+            padding-left: 10%;
+        }
+    
+        .tortle{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        
+        .tortle img{
+            padding-left: 10%;
+        }
+    
+        .bob{
+            grid-column: 4;
+            grid-row: 1;
+        }
+        
+        .bob img{
+            padding-left: 10%;
+        }
+    
+        .description{
+            grid-column: 2;
+            grid-row: 2;
+        }
+    
+        /* shared box design */
+        .stats{
+            background-color: rgba(125, 133, 219, 0.4);
+            border:rgba(100, 76, 197, 0.4) 7px outset;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin: 0.5%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">Sze Ting's Website <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
+            <div class="container-right">
+                <a href="introduction.html">Introduction</a>
+                <a href="education.html">Education</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+    </header>
+    <div class = "content">
+        <div class = "title panel"><p>Introduction</p></div>
+        <div class = "leftArrow" onclick="location.href='index.html'"></div>
+        <div class = "introduction">
+            <div class = "attribute">
+                <div class = "traits stats">
+                    <!-- stat list -->
+                    <h3><u>Stats</u></h3>
+                    <ul style="list-style-type:none;">
+                        <li>Birthday: 7/9/2004</li>
+                        <li>Nationality: Singapore</li>
+                        <li>Race: Chinese</li>
+                        <li>STR: <span style = "color: maroon; font-size: 40px;">&#9646;</span></li>
+                        <li>DEF: <span style = "color: maroon; font-size: 40px;">&#9646;</span></li>
+                        <li>INT: <span style = "color: goldenrod; font-size: 40px;">&#9646;&#9646;&#9646;</span></li>
+                        <li>SPD: <span style = "color: tomato ; font-size: 40px;">&#9646;&#9646;</span></li>
+                        <li>LUK: <span style = "color: yellowgreen; font-size: 40px;">&#9646;&#9646;&#9646;&#9646;</span></li>
+                    </ul>
+                </div>
+                <div class = "skills stats">
+                    <h3><u>Skills</u></h3>
+                    <ul style="list-style-type:square;">
+                        <li>Programming</li>
+                        <li>Drawing</li>
+                        <li>Sleeping</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "me stats">
+                <h3><u>LVL . 17 TAN SZE TING</u></h3>
+                <img src = "images/me.png" alt = "me" height= 80% width = auto>
+            </div>
+            <div class = "likes stats">
+                <h3><u>Likes</u></h3>
+                <div class = "cheese">
+                    <p>1. Cheese</p>
+                    <img src = "images/cheese.png" alt = "cheese" height = auto width = 50%>
+                </div>
+                <div class = "tortle">
+                    <p>2. Tortle</p>
+                    <img src = "images/shockedtortle.png" alt = "shockedtortle" height = auto width = 50%>
+                </div>
+                <div class = "bob">
+                    <p>3. Bob</p>
+                    <img src = "images/bob.png" alt = "bob" height = auto width = 80%>
+                </div>
+            </div>
+            <div class = "description stats">
+            <h3><u>Description</u></h3>
+            <p>An aspiring game developer studying at Nanyang Polytechnic pursuing a Game Development and Technology diploma.</p>
+            </div>
+        </div>
+        <div class = "rightArrow" onclick="location.href='education.html'"></div>
+    </div>
+    <div class = "footer">
+        <div class = "instagram">
+        <img src = "images/instagramLogo.png" alt = instagramLogo width = 7% height = auto>
+        Instagram: @a.single.bottle
+        </div>    
+        <div class = "discord">
+        <img src = "images/discordLogo.png" alt = discordLogo width = 7% height = auto>
+        Discord: Lumi#6130
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Sze Ting's Website - Hobbies</title>
+    <link rel ="stylesheet" type = "text/css" href = "css/style.css">
+    <style>
+    body{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 2% auto 2%;
+    }
+    
+    .hobbies{
+        display: grid;
+    }
+
+    .category{
+        display: grid;
+    }
+
+    .content img{
+        border: 3px solid black;
+    }
+
+    .drawing{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 50%;
+    }
+
+    .drawbg{
+        grid-row: 1;
+        grid-column: 1/span 2;
+    }
+
+    .drawold,.drawnew{
+        text-align: center;
+    }
+
+    .games{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .e7{
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .lol{
+        text-align: center;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .val{
+        text-align: center;
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .anime{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+
+    .anime .top{
+        grid-row: 1;
+        grid-column: 1/span 2;
+    }
+
+    .anime .kaguya{
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .anime .hanako{
+        text-align: center;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .anime .tomodachi{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .anime .saiki{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    /* zoom out effect for selected images */
+    .zoom img{
+        transition: transform .2s;
+    }
+
+    .zoom img:hover{
+        transform: scale(1.1);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">Sze Ting's Website <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
+            <div class="container-right">
+                <a href="introduction.html">Introduction</a>
+                <a href="education.html">Education</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+    </header>
+    <div class = "content">
+        <div class = "leftArrow" onclick="location.href='education.html'"></div>
+        <div class = "hobbies">
+            <div class = "title panel">
+                <p>Hobbies</p>
+            </div>
+            <div class = "category">
+                <div class = "drawing panel">
+                    <div class = "drawbg">
+                    <h3><u>Drawing</u></h3>
+                    <p>I started drawing when I was like 7 or something?</p>
+                    <p>I continued with it since the people around me kept encouraging me but I don't take it very seriously.</p>
+                    </div>
+                    <div class = "drawold">
+                    <p><em>Old drawing (11 years ago??)</em></p>
+                    <img src = "Images/olddrawing.jpg" alt = "Old drawing" width = 60% height = auto>
+                    </div>
+                    <div class = "drawnew">
+                    <p><em>Recent drawing (16/7/21)</em></p>
+                    <img src = "Images/zoe2.png" alt = "Recent drawing" width = 60% height = auto>
+                </div>
+                </div>
+                <div class = "games panel">
+                    <h3><u>Video Games</u></h3>
+                    <div class = "e7 zoom">
+                        <h4>Epic Seven</h4>
+                        <a href = "https://epic7.smilegatemegaport.com" target = "_blank" rel="noopener noreferrer">
+                        <img src = "images/epicseven.jpg" alt = e7 width = 90% height = auto>
+                        </a>
+                    </div>
+                    <div class = "lol zoom">
+                        <h4>League of Legends</h4>
+                        <a href = "https://www.leagueoflegends.com/en-pl/" target = "_blank" rel="noopener noreferrer">
+                        <img src = "images/leagueoflegends.jpg" alt = lol width = 80% height = auto>
+                        </a>
+                    </div>
+                    <div class = "val zoom">
+                        <h4>VALORANT</h4>
+                        <a href = "https://playvalorant.com/en-sg/" target = "_blank" rel="noopener noreferrer">
+                        <img src = "images/valorant.png" alt = val width = 90% height = auto>
+                        </a>
+                    </div>
+                </div>
+                <div class = "anime panel">
+                    <div class = "top">
+                        <h3><u>Anime/Manga</u></h3>
+                        <p>I've been watching anime for a long time, it started my interest in drawing. Nowadays, I prefer reading manga though.</p>
+                        <h4 style = "text-align: center;"><u>All-time Favourite Series</u></h4>
+                    </div>
+                        <div class = "kaguya zoom">
+                            <p>Kaguya-sama: Love is War</p>
+                            <a href = "https://myanimelist.net/anime/37999/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen" target = "_blank" rel="noopener noreferrer">
+                            <img src = "images/kaguyasama.jpg" alt = kaguya width = auto height = 80%>
+                            </a>
+                        </div>
+                        <div class = "hanako zoom">
+                            <p>Jibaku Shounen Hanako-kun</p>
+                            <a href = "https://myanimelist.net/anime/39534/Jibaku_Shounen_Hanako-kun" target = "_blank" rel="noopener noreferrer">
+                            <img src = "images/hanakokun.jpg" alt = hanako width = auto height = 80%>
+                            </a>
+                        </div>
+                        <div class = "tomodachi zoom">
+                            <p>Tomodachi Game</p>
+                            <a href = "https://myanimelist.net/anime/50273/Tomodachi_Game" target = "_blank" rel="noopener noreferrer">
+                            <img src = "images/tomodachigame.png" alt = tomodachi width = auto height = 80%>
+                            </a>
+                        </div>
+                        <div class = "saiki zoom">
+                            <p>Saiki Kusuo no Sai Nan</p>
+                            <a href = "https://myanimelist.net/anime/33255/Saiki_Kusuo_no_Ψ-nan" target = "_blank" rel="noopener noreferrer">
+                            <img src = "images/saikik.jpg" alt = saiki width = auto height = 80%>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "footer">
+        <div class = "instagram">
+        <img src = "images/instagramLogo.png" alt = instagramLogo width = 7% height = auto>
+        Instagram: @a.single.bottle
+        </div>    
+        <div class = "discord">
+        <img src = "images/discordLogo.png" alt = discordLogo width = 7% height = auto>
+        Discord: Lumi#6130
+        </div>
+    </div>
+</body>
+</html>
