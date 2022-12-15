@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Sze Ting's Website - Education</title>
+    <link rel ="stylesheet" type = "text/css" href = "CSS/style.css">
+    <style>
+        body{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: 2% auto auto auto 2%;
+            grid-template-rows: auto auto;
+        }
+
+        .education{
+            grid-column: 2/span 3;
+            grid-row: 1;
+        }
+
+        .primary{
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .secondary{
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .tertiary{
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        .title{
+            grid-column: 2/span 3;
+        }
+
+        /* border for images */
+        .panel > img{
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">Sze Ting's Website <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
+            <div class="container-right">
+                <a href="introduction.html">Introduction</a>
+                <a href="education.html">Education</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+    </header>
+    <div class = "content">
+        <div class = "leftArrow" onclick="location.href='introduction.html'"></div>
+        <div class = "title panel">
+           <p>Education</p>
+        </div>
+        <div class = "primary panel">
+        <h3><u>Primary School</u></h3>
+        <p>I began primary school studying at Mee Toh School.</p>
+        <img src = "images/meetohschool.jpg" alt = "Mee Toh School"  width = 95% height = auto>
+        <a href = https://meetoh.moe.edu.sg/ target = "_blank" rel="noopener noreferrer">  Mee Toh School</a>
+        <p>During this time, I was also in Infocomm CCA.</p>
+        </div>
+        <div class = "secondary panel">
+        <h3><u>Secondary School</u></h3>
+        <p>After finishing PSLE with a score of 225, I enrolled in Edgefield Secondary School.</p>
+        <img src = "images/edgefield.png" alt = "Edgefield Secondary School" width = 95% height = auto>
+        <a href = https://edgefieldsec.moe.edu.sg/ target = "_blank" rel="noopener noreferrer">Edgefield Secondary School</a>
+        <p>I somehow ended up joining Concert Band CCA playing the clarinet, which eventually made some of my fondest memories. :D</p>
+        </div>
+        <div class = "tertiary panel">
+        <h3><u>Polytechnic</u></h3>
+        <p>Now I am studying Game Development and Technology at Nanyang Polytechnic.</p>
+        <img src = "images/nyp.jpeg" alt = "Nanyang Polytechnic" width = 95% height = auto>
+        <a href = https://www.nyp.edu.sg/ target = "_blank" rel="noopener noreferrer">Nanyang Polytechnic</a>
+        <p>I've been having fun with the course so far. :D</p>
+        </div>
+        <div class = "rightArrow" onclick="location.href='hobbies.html'"></div>
+    </div>
+    <div class = "footer">
+        <div class = "instagram">
+        <img src = "images/instagramLogo.png" alt = instagramLogo width = 7% height = auto>
+        Instagram: @a.single.bottle
+        </div>    
+        <div class = "discord">
+        <img src = "images/discordLogo.png" alt = discordLogo width = 7% height = auto>
+        Discord: Lumi#6130
+        </div>
+    </div>
+</body>
+</html>
