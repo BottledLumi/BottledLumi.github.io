@@ -17,8 +17,8 @@
 
 body{
   display: grid;
-  background-image:radial-gradient(rgb(173, 225, 242),rgb(81, 55, 124));
-  color: rgb(17, 4, 38);
+  background-color: black;
+  color: rgb(0, 0, 0);
   font-family: 'pixelmix', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande'; 
   font-size: 21px;
   line-height: 1.15em;
@@ -111,19 +111,20 @@ header .container {
     grid-row: 3;
 }
 
-.instagram{
+/*
+.gmail{
   margin-left: 10%;
   float: left;
   width : 33%;
 }
 
-.discord{
+.telephone{
   margin-right: 10%;
   text-align: right;
   float: right;
   width: 33%;
   vertical-align: middle;
-}
+}*/
 
 .panel{
   background-color: white;

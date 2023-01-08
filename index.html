@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <title>Sze Ting's Website</title>
+    <title>Tan Sze Ting - Digital Portfolio</title>
     <link rel ="stylesheet" type = "text/css" href = "css/style.css">
+    <script src="js/script.js" defer></script>
     <style>
         body{
             grid-template-columns: auto;
             grid-template-rows: auto auto auto;
-            background-image:radial-gradient(rgb(109, 101, 87),rgb(23, 22, 22));
+            background-color:black;
         }
         
         .content{
             display: grid;
-            grid-template-columns: 2% 60% 36% 2%;
-            background-image:radial-gradient(rgb(173, 225, 242),rgb(81, 55, 124));
+            grid-column: 1;
+            grid-row: 2;
+            background-color:black;
         }
     
         #me {
@@ -83,25 +85,68 @@
             background-image:radial-gradient(rgb(109, 101, 87),rgb(23, 22, 22));
             height: 100%;
         }
+
+        .box{
+            background-color: white;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        .text, .contact{
+            padding: 30px;
+            padding-top: 15px;
+        }
+
         .footer{
             position: absolute;
             bottom: 0%;
         }
+
     </style>
 </head>
 <body>
     <header>
     <!-- navigation bar -->
     <div class="container">
-            <a href="index.html">Sze Ting's Website <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
-            <div class="container-right">
+            <a href="index.html">Tan Sze Ting <img src = "Images/bob.png" alt = "Bob drawing" width = auto height = 18px style = "vertical-align: middle"></a>
+            <!--<div class="container-right">
                 <a href="introduction.html">Introduction</a>
                 <a href="education.html">Education</a>
                 <a href="hobbies.html">Hobbies</a>
-            </div>
+            </div>-->
         </div>
     </header>
     <div class = "content">
+        <div class = "text box">
+            <h3>Introduction</h3>
+            <p>Hello! I'm Sze Ting, an aspiring game developer. This page features some of my most prominent works.</p>
+            <div class = "prophunt">
+                <br>
+                <h4>Prop Hunt</h4>
+                <p>In this project, I implemented a simple prop hunt game featuring multiplayer and server programming.</p>
+                <p>This was done with Unity3D and Photon (PUN 2). The video shows the gameplay and perspectives of both players.</p>
+                <video width = 800 height = auto controls><source src="videos/MLGP_ICA1.mp4" type="video/mp4"></video>
+            </div>
+            <div class = "asteroidshooter">
+                <br>
+                <h4>Asteroid Shooter</h4>
+                <p>This is a simple 2D asteroid shooter game featuring realistic physics.</p>
+                <p>Done with OpenGL and C++ entirely, all the physics implementations, including inelastic collisions, acceleration and gravity, are done through writing the formulae into code.</p>
+                <p>It also has a widespread variety of mechanics, such as powerups and a scoring system.</p>
+                <video width = 800 height = auto controls><source src="videos/212485M_A01.mp4" type="video/mp4"></video>
+            </div>
+            <div>
+                <br>
+                <h4>Mobyland</h4>
+                <p>Designed and programmed by my team of 4, Mobyland is a fast-paced survival game featuring weapons and enemies.<p>
+                <p>Having done the camera, player, and combat mechanics, I put a lot of effort in perfecting my parts and the project turned out successful despite many setbacks.</p>
+                <video width = 800 height = auto controls><source src="videos/SP3_Team5_Trailer.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    <!--
     <img src = "images/me.png" alt = "Me" id = me>
         <div class = "speechBubble">
             <img src = "images/pixelSpeechBubble.png" alt = speechBubble>
@@ -113,18 +158,19 @@
     <img src = "Images/bobClear.gif" alt = "Bob drawing" id = bob>
         <div id = floor>
         </div>
-        <div class = "rightArrow" onclick="location.href='introduction.html'"> <!--click to go next page-->
-        </div>
+        <div class = "rightArrow" onclick="location.href='introduction.html'">
+        </div>-->
     </div>
-    <div class = "footer">
+    <div class = "contact box">
+        <h3>Contact</h3>
     <!-- socials in footer -->
-        <div class = "instagram">
-        <img src = "images/instagramLogo.png" alt = instagramLogo width = 7% height = auto>
-        Instagram: @a.single.bottle
-        </div>    
-        <div class = "discord">
-        <img src = "images/discordLogo.png" alt = discordLogo width = 7% height = auto>
-        Discord: Lumi#6130
+        <div class = "gmail">
+        Email: tanszeting0@gmail.com
+        <img src = "images/gmailLogo.png" alt = gmailLogo width = auto height = 25>
+        </div>
+        <div class = "telephone">
+        Contact No.: +65 9773 8281
+        <img src = "images/telephoneLogo.png" alt = telephoneLogo width = auto height = 25>
         </div>
     </div>
 </body>
